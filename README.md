@@ -3,7 +3,7 @@
 IBM Data Science Professional Certificate – Applied Data Science Capstone
 
 ## Project Overview
-SpaceX advertises Falcon 9 launches at a much lower cost than competitors primarily due to first-stage booster recovery and reuse. For my capstone project, I built a complete end-to-end data science pipeline to predict whether a Falcon 9 first stage will land successfully. This repo covers everything from initial data collection and web scraping to EDA, interactive dashboards, and machine learning classification.
+SpaceX advertises Falcon 9 launches at a much lower cost than competitors primarily due to first-stage booster recovery and  reuse. For my capstone project, I built a complete end-to-end data science pipeline to predict whether a Falcon 9 first stage will land successfully. This repo covers everything from initial data collection and web scraping to EDA, interactive dashboards, and machine learning classification.
 
 ## Repository Contents
 
@@ -16,12 +16,12 @@ SpaceX advertises Falcon 9 launches at a much lower cost than competitors primar
 | 5 | `edadataviz.ipynb` | Conducted exploratory data analysis using Matplotlib and Seaborn, alongside feature one-hot encoding |
 | 6 | `lab_jupyter_launch_site_location.ipynb` | Built interactive Folium maps to analyze launch site locations, clusters, and proximity metrics |
 | 7 | `spacex-dash-app.py` | Developed an interactive Plotly Dash app featuring launch site selection and dynamic payload filtering |
-| 8 | `SpaceX_Machine_Learning_Prediction_Part_5.ipynb` | Trained and hyperparameter-tuned multiple classification models (Logistic Regression, SVM, Decision Tree, KNN) |
+| 8 | `SpaceX_Machine_Learning_Prediction_Part_5.ipynb` | Trained and tuned multiple classification models (Logistic Regression, SVM, Decision Tree, KNN) |
 
-## Key Results & Takeaways
+## Key Results & Takeaway
 - **Operational Growth:** Launch success rates improved significantly over time as flight numbers increased.
 - **Site Performance:** KSC LC-39A demonstrated the highest overall launch success rate.
 - **Model Performance:** Logistic Regression, SVM, and KNN all achieved strong test accuracies of 83.3%. While the Decision Tree scored high in cross-validation, it showed signs of overfitting on the test set.
 
 ## Tech Stack & Tools
-Python, Pandas, NumPy, BeautifulSoup, SQLite, Matplotlib, Seaborn, Folium, Plotly Dash, Scikit-Learn
+Python, Pandas, NumPy, BeautifulSoup, SQLite, Matplotlib, Seaborn, Folium, Plotly Dash, Scikit-Lean
