@@ -3,26 +3,25 @@
 IBM Data Science Professional Certificate – Applied Data Science Capstone
 
 ## Project Overview
-SpaceX advertises Falcon 9 launches at a much lower cost than other providers, largely because the first stage booster can be recovered and reused. This project predicts whether the Falcon 9 first stage will land successfully, which helps estimate the cost of a launch. The analysis covers data collection, wrangling, exploratory data analysis, interactive visual analytics, and machine learning classification.
+SpaceX advertises Falcon 9 launches at a much lower cost than competitors primarily due to first-stage booster recovery and reuse. For my capstone project, I built a complete end-to-end data science pipeline to predict whether a Falcon 9 first stage will land successfully. This repo covers everything from initial data collection and web scraping to EDA, interactive dashboards, and machine learning classification.
 
 ## Repository Contents
 
 | # | File | Description |
 |---|------|-------------|
-| 1 | `jupyter-labs-spacex-data-collection-api.ipynb` | Collects launch data from the SpaceX REST API, filters to Falcon 9 launches, and handles missing payload values |
-| 2 | `jupyter-labs-webscraping.ipynb` | Scrapes historical Falcon 9 launch records from Wikipedia with BeautifulSoup |
-| 3 | `labs-jupyter-spacex-Data_wrangling.ipynb` | Explores launch sites, orbits, and outcomes, and creates the binary landing label (`Class`) |
-| 4 | `jupyter-labs-eda-sql-coursera_sqllite.ipynb` | Exploratory data analysis with SQL queries on a SQLite database |
-| 5 | `edadataviz.ipynb` | Exploratory data analysis with Matplotlib and Seaborn, plus feature engineering with one-hot encoding |
-| 6 | `lab_jupyter_launch_site_location.ipynb` | Interactive launch site maps with Folium, including success markers and proximity distances |
-| 7 | `spacex-dash-app.py` | Interactive Plotly Dash dashboard with a launch site dropdown and payload range slider |
-| 8 | `SpaceX_Machine_Learning_Prediction_Part_5.ipynb` | Trains and tunes Logistic Regression, SVM, Decision Tree, and KNN classifiers with GridSearchCV |
+| 1 | `jupyter-labs-spacex-data-collection-api.ipynb` | Collected launch data using the SpaceX REST API, filtered for Falcon 9, and cleaned missing payload values |
+| 2 | `jupyter-labs-webscraping.ipynb` | Scraped historical Falcon 9 launch records and details from Wikipedia using BeautifulSoup |
+| 3 | `labs-jupyter-spacex-Data_wrangling.ipynb` | Performed data cleaning, explored launch patterns, and engineered the binary landing target variable (`Class`) |
+| 4 | `jupyter-labs-eda-sql-coursera_sqllite.ipynb` | Loaded data into SQLite and ran SQL queries to extract key database insights |
+| 5 | `edadataviz.ipynb` | Conducted exploratory data analysis using Matplotlib and Seaborn, alongside feature one-hot encoding |
+| 6 | `lab_jupyter_launch_site_location.ipynb` | Built interactive Folium maps to analyze launch site locations, clusters, and proximity metrics |
+| 7 | `spacex-dash-app.py` | Developed an interactive Plotly Dash app featuring launch site selection and dynamic payload filtering |
+| 8 | `SpaceX_Machine_Learning_Prediction_Part_5.ipynb` | Trained and hyperparameter-tuned multiple classification models (Logistic Regression, SVM, Decision Tree, KNN) |
 
-## Key Results
-- Landing success rates improved steadily over time as SpaceX gained operational experience.
-- KSC LC-39A had the highest launch success rate of all sites.
-- Logistic Regression, SVM, and KNN each reached 83.3% accuracy on the test set.
-- The Decision Tree had the highest cross-validation score (90.4%) but the lowest test accuracy (66.7%), a sign of overfitting on the small dataset.
+## Key Results & Takeaways
+- **Operational Growth:** Launch success rates improved significantly over time as flight numbers increased.
+- **Site Performance:** KSC LC-39A demonstrated the highest overall launch success rate.
+- **Model Performance:** Logistic Regression, SVM, and KNN all achieved strong test accuracies of 83.3%. While the Decision Tree scored high in cross-validation, it showed signs of overfitting on the test set.
 
-## Tools
-Python, Pandas, NumPy, Requests, BeautifulSoup, SQLite, Matplotlib, Seaborn, Folium, Plotly Dash, Scikit-learn
+## Tech Stack & Tools
+Python, Pandas, NumPy, BeautifulSoup, SQLite, Matplotlib, Seaborn, Folium, Plotly Dash, Scikit-Learn
